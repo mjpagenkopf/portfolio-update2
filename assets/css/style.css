@@ -1,0 +1,413 @@
+* { 
+    color:ghostwhite;
+    margin:0px;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    width:100%;
+    background: linear-gradient(hsl(0, 60%, 27%), #5e50db);
+}
+/* HEADER */
+header {
+    display:flex;
+    flex-direction:column;
+    height:350px;
+    /* margin:20px 60px; */
+    background-size:contain;
+    background-attachment:fixed;
+    background-image:url(../images/IMG_1987.JPG);
+    filter:blur(0.4);
+    opacity:0.7;
+}
+
+.header-name {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    min-width:500px;
+}
+
+.header-name h1 {
+    display:flex;
+    justify-content:flex-start;
+    color:salmon;
+    font-size:100px;
+}
+
+.header-name h2 {
+    display:flex;
+    color:springgreen;
+    text-align:left;
+    font-size:40px;
+}
+
+header .header-block {
+    display:flex;
+    list-style-type:none;
+    flex-direction:row;
+    justify-content:space-evenly;
+    font-size:30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding:0px 0px 0px 600px;  
+}
+/* END OF HEADER */
+
+/* GRID SETUP */
+.grid-image {
+    background-image:url(../images/machu\ picchu.jpg);
+    background-size:cover;
+}
+
+.grid-container {
+    display:grid;
+    grid-gap:7px;
+    grid-template-columns:repeat(auto-fit);
+    justify-content:space-evenly;
+}
+
+.grid-container div {
+    height:400px;
+    background-size:cover;
+    background-attachment:fixed;
+    opacity:0.9;      
+}
+
+.grid-container .grid-image .img8 h2 {
+    display:flex;
+    justify-content:center;
+    font-size:200px;
+}
+
+.grid-container .grid-image .img9 img {
+    flex-shrink:0 10 300px;
+}
+/* END OF GRID SETUP */
+
+/* BOX 1 */
+.grid-container div:nth-child(1) {
+    display:flex;
+    padding:10px;
+    grid-column: 1/3;
+}
+
+.grid-container div:nth-child(1) img {
+    display:flex;
+    max-width:300px;
+    padding:10px;
+    border-radius:500px;
+    background:linear-gradient(to right, rgb(226, 226, 226), rgb(148, 104, 75)); 
+}
+
+.grid-container div:nth-child(1) .grid-box1-text {
+    display:flex;
+    flex-direction:column;
+    padding-left:20px;
+    font-size:150%;
+    justify-content:space-evenly;
+}
+
+.grid-container div:nth-child(1) h2 {
+    display:flex;
+    font-size:300%;
+}
+/* END OF BOX 1 */
+
+/* BOX 2 */
+.grid-container div:nth-child(2) {
+    display:flex;
+    padding:10px;
+    grid-column: 1/2;
+}
+
+.grid-container div:nth-child(2) .grid-box2-text {
+    flex-direction:column;
+    text-align:center;
+    font-size:150%;
+}
+
+.grid-container div:nth-child(2) .grid-box2-text h2 {
+    justify-content:center;    
+}
+/* END OF BOX 2 */
+
+/* BOX 3 */
+.grid-container div:nth-child(3) {
+    display:flex;
+    padding:10px;
+    grid-column: 2/2;
+}
+
+.horiseon {
+    display:flex;
+    background-image:url(../images/Horiseon.png);
+    background-size:cover;
+    /* background-repeat:repeat; */
+    background-position:left;
+    background-clip:border-box;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+
+.horiseon:hover {
+    filter:brightness(1.2);
+    width:102%;
+    padding:0px;
+}
+/* END OF BOX 3 */
+
+/* BOX 4 */
+.grid-container div:nth-child(4) {
+    display:flex;
+    padding:10px;
+    grid-column: 1/2;
+}
+
+.grid-container div:nth-child(4) .workday {
+    display:flex;
+    background-image:url(../images/workday_scheduler.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-clip:border-box;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+
+.workday:hover {
+    filter:brightness(1.2);
+}
+/* END OF BOX 4 */
+
+/* BOX 5 */
+.grid-container div:nth-child(5) {
+    display:flex;
+    padding:10px;
+    grid-column: 2/2;
+}
+
+.grid-container div:nth-child(5) .grid-box5-text {
+    flex-direction:column;
+    text-align:center;
+    font-size:150%;
+    
+}
+
+.grid-container div:nth-child(5) .grid-box5-text h2 {
+    justify-content:center;
+    padding:10px;
+}
+/* END OF BOX 5 */
+
+/* BOX 6 */
+.grid-container div:nth-child(6) {
+    display:flex;
+    padding:10px;
+    grid-column: 1/2;
+}
+
+.grid-container div:nth-child(6) .grid-box6-text {
+    flex-direction:column;
+    text-align:center;
+    font-size:150%;
+}
+
+.grid-container div:nth-child(6) .grid-box6-text h2 {
+    justify-content:center;    
+}
+/* END OF BOX 6 */
+
+/* BOX 7 */
+.grid-container div:nth-child(7) {
+    display:flex;
+    padding:10px;
+    grid-column: 2/2;
+}
+
+.grid-container div:nth-child(7) .weather {
+    display:flex;
+    background-image:url(../images/weather_app.png);
+    background-size:cover;
+    /* background-repeat:repeat; */
+    background-position:left;
+    background-clip:border-box;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+
+.weather:hover {
+    filter:brightness(1.2);
+    width:102%;
+    padding:0px;
+}
+/* END OF BOX 7 */
+
+/* BOX 8 */
+.grid-container div:nth-child(8) {
+    display:flex;
+    padding:10px;
+    grid-column: 1/2;
+}
+
+.grid-container div:nth-child(8) .covid {
+    display:flex;
+    background-image:url(../images/covid.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-clip:border-box;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+
+.covid:hover {
+    filter:brightness(1.2);
+}
+/* END OF BOX 8 */
+
+/* BOX 9 */
+.grid-container div:nth-child(9) {
+    display:flex;
+    padding:10px;
+    grid-column: 2/2;
+}
+
+.grid-container div:nth-child(9) .grid-box9-text {
+    flex-direction:column;
+    text-align:center;
+    font-size:150%;
+    
+}
+
+.grid-container div:nth-child(9) .grid-box9-text h2 {
+    justify-content:center;
+    padding:10px;
+}
+/* END OF BOX 9 */
+
+
+/* BOX 10 */
+address {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.grid-container div:nth-child(10) {
+    display:flex;
+    padding:10px;
+    grid-column: 1/2;
+}   
+
+.grid-container div:nth-child(10) .grid-box10-text {
+    flex-direction:column;
+    text-align:center;
+    font-size:150%; 
+}
+
+.grid-container div:nth-child(10) .grid-box10-text h2 {
+    justify-content:center;
+    padding:10px;
+}
+/* END OF BOX 10 */
+
+/* BOX 11 */
+.grid-container div:nth-child(11) {
+    display:flex;
+    padding:10px;
+    grid-column: 2/2;
+}
+
+.grid-container div:nth-child(11) .resume-box {
+    display:flex;
+    background-image:url(../images/resume_screenshot.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-clip:border-box;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+
+.resume-box:hover {
+    filter:brightness(1.2);    
+}
+/* END OF BOX 11 */
+
+footer {
+    display:flex;
+    justify-content:center;
+    padding:40px;
+    height:200px;  
+}
+
+
+
+
+
+
+/* BOX 8 */
+/* .grid-container div:nth-child(8) {
+    display:flex;
+    padding:10px;
+    grid-column: 1/2;
+} */
+
+/* .grid-container div:nth-child(8) .editor {
+    display:flex;
+    background-image:url(../images/Big\ Mike\ on\ Glacier.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-clip:border-box;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+} */
+
+/* .editor:hover {
+    filter:brightness(1.2);
+} */
+/* END OF BOX 4 */
+
+/* BOX 5 */
+/* .grid-container div:nth-child(9) {
+    display:flex;
+    padding:10px;
+    grid-column: 2/2;
+}
+
+.grid-container div:nth-child(9) .grid-box9-text {
+    flex-direction:column;
+    text-align:center;
+    font-size:150%;
+    
+}
+
+.grid-container div:nth-child(5) .grid-box9-text h2 {
+    justify-content:center;
+    padding:10px;
+} */
+/* END OF BOX 5 */
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
